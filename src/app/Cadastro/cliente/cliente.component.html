@@ -1,0 +1,78 @@
+
+<div style="background: darkgreen">
+  <div class="row" style="padding-left: 5px;">
+    <div class="col s12 m6 l4">
+      <h2 style="color: white">Cadastro de Cliente</h2>
+    </div>
+    <div class="col s12 m6 l8">
+      <mat-form-field >
+        <input matInput placeholder="Nome"  type="text" [(ngModel)]="cliente.nomeCliente">
+      </mat-form-field>
+    </div>
+    <div class="col s12 m6 l8">
+      <mat-form-field >
+        <input matInput placeholder="endereço"  type="text" [(ngModel)]="cliente.clienteEndereco">
+      </mat-form-field>
+    </div>
+    <mat-form-field>
+      <mat-select [(ngModel)]="cliente.idCidade">
+        <mat-option *ngFor="let cidade of cidades" [value]="cidade.idCidade">
+          {{cidade.nomeCidade}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row footer-btn">
+    <div class="button-row col s12"> 
+      <button *ngIf="!edit" mat-raised-button class="btn btn-primary" (click)="save()">Salvar</button>
+      <button *ngIf="edit" mat-raised-button class="btn btn-primary" (click)="update()">Atualizar</button>
+    </div>
+    </div>
+  </div>
+
+  <!------------------------------------->
+
+  <div class="row">
+    <div class="col s12">
+      <mat-table #table [dataSource]="dataSource" matSort class="table-striped">
+  
+      <!-- Ações -->
+      <ng-container matColumnDef="actionsColumn">
+        <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+            <button mat-icon-button>
+              <mat-icon matTooltip="Excluir" (click)="excluir(element.idCliente)">delete</mat-icon>
+            </button>  
+            <button mat-icon-button>
+              <mat-icon matTooltip="Editar" (click)="markEdit(element)">edit</mat-icon>
+            </button>
+        </mat-cell>
+      </ng-container>   
+
+      <ng-container matColumnDef="codigo">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Codigo </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.idCliente}} </mat-cell>
+      </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="cliente">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Cliente </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.nomeCliente}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="endereco">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Endereço </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.clienteEndereco}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="cidade">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Cidade </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.idCidade}} </mat-cell>
+      </ng-container>
+
+
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    
+  </div>

@@ -1,0 +1,14 @@
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\bin\Debug\netcoreapp2.2\primeiraParte.deps.json
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\bin\Debug\netcoreapp2.2\primeiraParte.runtimeconfig.json
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\bin\Debug\netcoreapp2.2\primeiraParte.runtimeconfig.dev.json
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\bin\Debug\netcoreapp2.2\primeiraParte.dll
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.csprojAssemblyReference.cache
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.csproj.CoreCompileInputs.cache
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.RazorAssemblyInfo.cache
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.RazorAssemblyInfo.cs
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.AssemblyInfoInputs.cache
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.AssemblyInfo.cs
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.RazorTargetAssemblyInfo.cache
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\bin\Debug\netcoreapp2.2\primeiraParte.pdb
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.dll
+C:\Users\Gian\Desktop\RevisaoIntegrados\primeiraParte\primeiraParte\obj\Debug\netcoreapp2.2\primeiraParte.pdb
